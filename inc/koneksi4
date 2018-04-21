@@ -1,0 +1,20 @@
+<?php
+//$server = 'egServer70';
+$server = '192.168.1.1';
+$username = 'rs';
+$password = 'rsiyrs';
+$database = 'rspdhi';
+$conn = mssql_connect($server, $username, $password);
+if($conn){
+}
+else{
+	echo "Tidak Bisa Koneksi Ke Database<br />";
+	die( print_r( sqlsrv_errors(), true));
+}
+if(mssql_select_db($database, $conn)){
+	echo "Bisa Koneksi Ke Database<br />";
+}
+else{
+	die('Gagal buka Database');
+}
+?>

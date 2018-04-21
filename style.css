@@ -1,0 +1,25 @@
+
+
+.wrap{
+    margin: 10px auto;
+    width: 700px;
+    padding: 20px;
+    color: #fff;
+    background: #35A9DB;
+    text-align: justify;
+}
+
+
+/*css3 design scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {     
+    background: #fff;    
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #35A9DB;
+    border-radius:10px;
+}
